@@ -10,8 +10,8 @@ Source0:	http://dl.sourceforge.net/sourceforge/sim-icq/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
 URL:		http://sim-icq.sourceforge.net/
 BuildRequires:	arts-devel
-BuildRequires:	kdelibs-devel 
-BuildRequires:	qt-devel 
+BuildRequires:	kdelibs-devel
+BuildRequires:	qt-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
