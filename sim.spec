@@ -9,12 +9,17 @@ Source0:	http://dl.sourceforge.net/sim-icq/%{name}-%{version}.tar.gz
 # Source0-md5:	c277579df074c31c5dc09a876bde50f4
 Source1:	%{name}.desktop
 URL:		http://sim-icq.sourceforge.net/
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	arts-devel
 BuildRequires:	fam-devel
+BuildRequires:	flex
+BuildRequires:	gettext-devel
 BuildRequires:	kdelibs-devel
 BuildRequires:	libart_lgpl-devel
+BuildRequires:	libxslt-devel
 BuildRequires:	qt-devel
-BuildRequires:	openssl-devel
+BuildRequires:	openssl-devel >= 0.9.7d
 BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
