@@ -11,3 +11,4 @@ Comment[pl]=Klient ICQ
 Terminal=false
 Name=Sim
 Categories=Qt;KDE;Network;X-Communication
+# vi: encoding=utf-8
