@@ -40,7 +40,7 @@ protoko³ów. Wszystkie protoko³y wspieraj± wiadomo¶ci richtext,
 transfer plików, sygnalizowanie pisania, lista kontaktów po stronie
 serwera (z opó¼nion± synchronizacj± - mo¿esz zmieniaæ listê kontaktów
 bêd±c offline - po zalogowaniu online zmiany zostan± zsynchronizowane,
-rejstracja nowych kont, ró¿ne rodzaje przeszukiwañ, pooling HTTP.
+rejestracja nowych kont, ró¿ne rodzaje przeszukiwañ, pooling HTTP.
 Mo¿esz u¿ywaæ niektórych kont dla ka¿dego protoko³u. Wspierane
 protoko³u: Oscar - ICQ oraz AIM, Jabber, LiveJournal, MSN, Yahoo! i
 inne.
