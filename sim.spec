@@ -1,24 +1,30 @@
+# TODO: fix pixmaps dir
 Summary:	SIM - Simple Instant Messenger
+Summary(pl):	SIM - Simple Instant Messenger - prosty komunikator
 Name:		sim
 Version:	0.8.2
 Release:	1
 License:	GPL
-Url:		http://sim-icq.sourceforge.net/
 Group:		Applications/Communications
 Source0:	http://telia.dl.sourceforge.net/sourceforge/sim-icq/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-BuildRequires:	qt-devel 
-BuildRequires:	kdelibs-devel 
+URL:		http://sim-icq.sourceforge.net/
 BuildRequires:	arts-devel
+BuildRequires:	kdelibs-devel 
+BuildRequires:	qt-devel 
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-A simple ICQ client with v8 protocol support (2001) for X win system
-(requires QT, can be build for KDE). It also runs under MS Windows.
+A simple ICQ client with v8 protocol support (2001) for X Window
+system (requires QT, can be build for KDE). It also runs under MS
+Windows.
+
+%description -l pl
+Prosty klient ICQ z obs³ug± protoko³u v8 (2001) dla systemu X Window
+(wymaga QT, mo¿e byæ zbudowany dla KDE). Dzia³a tak¿e pod MS Windows.
 
 %prep
 %setup -q
-
 
 %build
 %{__make}  -f admin/Makefile.common
@@ -29,14 +35,15 @@ A simple ICQ client with v8 protocol support (2001) for X win system
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_desktopdir}
+
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
 install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
 
-
 %find_lang %{name}
 
 %clean
+rm -rf $RPM_BUILD_ROOT
 
 %files  -f %{name}.lang
 %defattr(644,root,root,755)
