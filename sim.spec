@@ -2,7 +2,7 @@ Summary:	SIM - Simple Instant Messenger
 Summary(pl):	SIM - Simple Instant Messenger - prosty komunikator
 Name:		sim
 Version:	0.9.3
-Release:	2
+Release:	3
 License:	GPL
 Group:		Applications/Communications
 Source0:	http://dl.sourceforge.net/sim-icq/%{name}-%{version}.tar.gz
@@ -47,9 +47,12 @@ inne.
 %prep
 %setup -q
 
+%{__perl} -pi -e 's@^sim_plugindir=.*@sim_plugindir="%{_libdir}/sim"@' configure.in.in
+
 %build
 %{__make} -f admin/Makefile.common
-%configure
+%configure \
+	KDEDIR=%{_libdir}
 
 %{__make}
 
