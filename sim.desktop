@@ -7,6 +7,6 @@ DocPath=sim/index.html
 Comment=ICQ-client
 Comment[de]=ICQ-Client
 Comment[pl]=Klient ICQ
-Terminal=0
+Terminal=false
 Name=Sim
 Categories=Qt;KDE;Network;X-Communication
