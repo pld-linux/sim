@@ -1,4 +1,3 @@
-# TODO: fix pixmaps dir
 Summary:	SIM - Simple Instant Messenger
 Summary(pl):	SIM - Simple Instant Messenger - prosty komunikator
 Name:		sim
@@ -27,7 +26,8 @@ Prosty klient ICQ z obs³ug± protoko³u v8 (2001) dla systemu X Window
 %setup -q
 
 %build
-%{__make}  -f admin/Makefile.common
+kde_icondir="%{_pixmapsdir}"; export kde_icondir
+%{__make} -f admin/Makefile.common
 %configure
 
 %{__make}
@@ -50,5 +50,5 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/sim
 %attr(755,root,root) %{_bindir}/simctrl
 %{_datadir}/apps/sim
-%{_datadir}/icons/*/*/*/*
+%{_pixmapsdir}/*/*/*/*
 %{_desktopdir}/sim.desktop
