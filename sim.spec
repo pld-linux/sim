@@ -2,7 +2,7 @@ Summary:	SIM - Simple Instant Messenger
 Summary(pl):	SIM - Simple Instant Messenger - prosty komunikator
 Name:		sim
 Version:	0.9.3
-Release:	4
+Release:	5
 License:	GPL
 Group:		Applications/Communications
 Source0:	http://dl.sourceforge.net/sim-icq/%{name}-%{version}.tar.gz
@@ -66,6 +66,8 @@ install -d $RPM_BUILD_ROOT%{_desktopdir}
 
 install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
 
+# it is _not_ in swahili
+rm -rf %{_datadir}/locale/sw
 %find_lang %{name}
 
 %clean
