@@ -2,14 +2,14 @@ Summary:	SIM - Simple Instant Messenger
 Summary(pl):	SIM - Simple Instant Messenger - prosty komunikator
 Name:		sim
 Version:	0.9.3
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Communications
 Source0:	http://dl.sourceforge.net/sim-icq/%{name}-%{version}.tar.gz
 # Source0-md5:	c277579df074c31c5dc09a876bde50f4
 Source1:	%{name}.desktop
 URL:		http://sim-icq.sourceforge.net/
-BuildRequires:	autoconf
+BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake
 BuildRequires:	arts-devel
 BuildRequires:	fam-devel
@@ -48,7 +48,6 @@ inne.
 %setup -q
 
 %build
-kde_icondir="%{_pixmapsdir}"; export kde_icondir
 %{__make} -f admin/Makefile.common
 %configure
 
@@ -76,11 +75,11 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS ChangeLog README
 %attr(755,root,root) %{_bindir}/sim
 %attr(755,root,root) %{_bindir}/simctrl
+%attr(755,root,root) %{_libdir}/lib*.so.*.*
+%dir %{_libdir}/sim
+%attr(755,root,root) %{_libdir}/sim/*.so
 %{_datadir}/apps/sim
 %{_datadir}/services/*.desktop
 %{_datadir}/mimelnk/application/*.desktop
-%{_pixmapsdir}/*/*/*/*
+%{_iconsdir}/hicolor/*/*/*.png
 %{_desktopdir}/sim.desktop
-%dir %{_libdir}/sim
-%attr(755,root,root) %{_libdir}/sim/*.so
-%attr(755,root,root) %{_libdir}/lib*.so.*.*
