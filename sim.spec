@@ -2,7 +2,7 @@ Summary:	SIM - Simple Instant Messenger
 Summary(pl):	SIM - Simple Instant Messenger - prosty komunikator
 Name:		sim
 Version:	0.9.3
-Release:	3
+Release:	4
 License:	GPL
 Group:		Applications/Communications
 Source0:	http://dl.sourceforge.net/sim-icq/%{name}-%{version}.tar.gz
@@ -21,6 +21,7 @@ BuildRequires:	libxslt-devel
 BuildRequires:	qt-devel
 BuildRequires:	openssl-devel >= 0.9.7d
 BuildRequires:	pkgconfig
+Requires:	kdelibs >= 9:3.3.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -83,6 +84,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_libdir}/sim/*.so
 %{_datadir}/apps/sim
 %{_datadir}/services/*.desktop
-%{_datadir}/mimelnk/application/*.desktop
+# already in kdelibs
+#%{_datadir}/mimelnk/application/*.desktop
 %{_iconsdir}/hicolor/*/*/*.png
 %{_desktopdir}/sim.desktop
