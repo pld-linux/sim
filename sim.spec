@@ -5,7 +5,8 @@ Version:	0.8.2
 Release:	1
 License:	GPL
 Group:		Applications/Communications
-Source0:	http://telia.dl.sourceforge.net/sourceforge/sim-icq/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/sourceforge/sim-icq/%{name}-%{version}.tar.gz
+# Source0-md5:	c04ecb5569746df71dd330d71eed89f0
 Source1:	%{name}.desktop
 URL:		http://sim-icq.sourceforge.net/
 BuildRequires:	arts-devel
