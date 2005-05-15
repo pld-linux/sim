@@ -8,6 +8,7 @@ Group:		Applications/Communications
 Source0:	http://dl.sourceforge.net/sim-icq/%{name}-%{version}.tar.gz
 # Source0-md5:	c277579df074c31c5dc09a876bde50f4
 Source1:	%{name}.desktop
+Patch0:		%{name}-am19.patch
 URL:		http://sim-icq.sourceforge.net/
 BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake
@@ -47,6 +48,7 @@ inne.
 
 %prep
 %setup -q
+%patch -p1
 
 %{__perl} -pi -e 's@^sim_plugindir=.*@sim_plugindir="%{_libdir}/sim"@' configure.in.in
 
