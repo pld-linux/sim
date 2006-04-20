@@ -2,7 +2,7 @@ Summary:	SIM - Simple Instant Messenger
 Summary(pl):	SIM - Simple Instant Messenger - prosty komunikator
 Name:		sim
 Version:	0.9.3
-Release:	6
+Release:	7
 License:	GPL
 Group:		Applications/Communications
 Source0:	http://dl.sourceforge.net/sim-icq/%{name}-%{version}.tar.gz
@@ -26,8 +26,8 @@ Requires:	kdelibs >= 9:3.3.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Plugins-based instant messenger with support various protocols. All
-protocol support richtext-messages, file transfer, typing
+Plugins-based instant messenger with support for various protocols.
+All protocols support richtext-messages, file transfer, typing
 notification, server-side contact list (with postponed synchronization
 - you can change contact list in offline mode and after log on all
 changes will be synchronized with server), new account registration,
