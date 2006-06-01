@@ -1,14 +1,14 @@
+%define		_rc	rc2
 Summary:	SIM - Simple Instant Messenger
 Summary(pl):	SIM - Simple Instant Messenger - prosty komunikator
 Name:		sim
-Version:	0.9.3
-Release:	7
+Version:	0.9.4
+Release:	0.%{_rc}.1
 License:	GPL
 Group:		Applications/Communications
-Source0:	http://dl.sourceforge.net/sim-icq/%{name}-%{version}.tar.gz
-# Source0-md5:	c277579df074c31c5dc09a876bde50f4
+Source0:	http://download.berlios.de/sim-im/%{name}-%{version}%{_rc}.tar.bz2
+# Source0-md5:	08359ac92eda3df4762df462c0039da5
 Source1:	%{name}.desktop
-Patch0:		%{name}-am19.patch
 URL:		http://sim-icq.sourceforge.net/
 BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake
@@ -22,6 +22,7 @@ BuildRequires:	libxslt-devel
 BuildRequires:	qt-devel
 BuildRequires:	openssl-devel >= 0.9.7d
 BuildRequires:	pkgconfig
+BuildRequires:	xorg-lib-libXScrnSaver-devel
 Requires:	kdelibs >= 9:3.3.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -48,7 +49,6 @@ inne.
 
 %prep
 %setup -q
-%patch -p1
 
 %{__perl} -pi -e 's@^sim_plugindir=.*@sim_plugindir="%{_libdir}/sim"@' configure.in.in
 
