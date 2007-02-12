@@ -1,5 +1,5 @@
 Summary:	SIM - Simple Instant Messenger
-Summary(pl.UTF-8):   SIM - Simple Instant Messenger - prosty komunikator
+Summary(pl.UTF-8):	SIM - Simple Instant Messenger - prosty komunikator
 Name:		sim
 Version:	0.9.4.1
 Release:	1
