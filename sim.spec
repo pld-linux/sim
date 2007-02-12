@@ -1,5 +1,5 @@
 Summary:	SIM - Simple Instant Messenger
-Summary(pl):	SIM - Simple Instant Messenger - prosty komunikator
+Summary(pl.UTF-8):   SIM - Simple Instant Messenger - prosty komunikator
 Name:		sim
 Version:	0.9.4.1
 Release:	1
@@ -35,15 +35,15 @@ various searches and HTTP-polling. You can use some accounts for each
 protocols. Supported protocols: Oscar - ICQ and AIM support, Jabber,
 LiveJournal, MSN, Yahoo! and others.
 
-%description -l pl
-Prosty komunikator bazuj±cy na wtyczkach ze wsparciem dla ró¿nych
-protoko³ów. Wszystkie protoko³y wspieraj± wiadomo¶ci richtext,
-transfer plików, sygnalizowanie pisania, lista kontaktów po stronie
-serwera (z opó¼nion± synchronizacj± - mo¿esz zmieniaæ listê kontaktów
-bêd±c offline - po zalogowaniu online zmiany zostan± zsynchronizowane,
-rejestracja nowych kont, ró¿ne rodzaje przeszukiwañ, pooling HTTP.
-Mo¿esz u¿ywaæ niektórych kont dla ka¿dego protoko³u. Wspierane
-protoko³u: Oscar - ICQ oraz AIM, Jabber, LiveJournal, MSN, Yahoo! i
+%description -l pl.UTF-8
+Prosty komunikator bazujÄ…cy na wtyczkach ze wsparciem dla rÃ³Å¼nych
+protokoÅ‚Ã³w. Wszystkie protokoÅ‚y wspierajÄ… wiadomoÅ›ci richtext,
+transfer plikÃ³w, sygnalizowanie pisania, lista kontaktÃ³w po stronie
+serwera (z opÃ³ÅºnionÄ… synchronizacjÄ… - moÅ¼esz zmieniaÄ‡ listÄ™ kontaktÃ³w
+bÄ™dÄ…c offline - po zalogowaniu online zmiany zostanÄ… zsynchronizowane,
+rejestracja nowych kont, rÃ³Å¼ne rodzaje przeszukiwaÅ„, pooling HTTP.
+MoÅ¼esz uÅ¼ywaÄ‡ niektÃ³rych kont dla kaÅ¼dego protokoÅ‚u. Wspierane
+protokoÅ‚u: Oscar - ICQ oraz AIM, Jabber, LiveJournal, MSN, Yahoo! i
 inne.
 
 %prep
