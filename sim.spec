@@ -72,6 +72,11 @@ install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
 
 # it is _not_ in swahili
 rm -rf $RPM_BUILD_ROOT%{_datadir}/locale/sw
+
+# remove .la files
+rm $RPM_BUILD_ROOT%{_libdir}/libsim.la
+rm $RPM_BUILD_ROOT%{_libdir}/sim/*.la
+
 %find_lang %{name}
 
 %clean
@@ -94,3 +99,4 @@ rm -rf $RPM_BUILD_ROOT
 #%{_datadir}/mimelnk/application/*.desktop
 %{_iconsdir}/hicolor/*/*/*.png
 %{_desktopdir}/sim.desktop
+%{_desktopdir}/kde/sim.desktop
