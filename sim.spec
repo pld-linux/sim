@@ -95,3 +95,4 @@ rm -rf $RPM_BUILD_ROOT
 #%{_datadir}/mimelnk/application/*.desktop
 %{_iconsdir}/hicolor/*/*/*.png
 %{_desktopdir}/sim.desktop
+%{_desktopdir}/kde/sim.desktop
