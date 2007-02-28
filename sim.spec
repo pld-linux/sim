@@ -63,12 +63,11 @@ inne.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_desktopdir}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
+install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}/kde
 
 # it is _not_ in swahili
 rm -rf $RPM_BUILD_ROOT%{_datadir}/locale/sw
@@ -98,5 +97,4 @@ rm -rf $RPM_BUILD_ROOT
 # already in kdelibs
 #%{_datadir}/mimelnk/application/*.desktop
 %{_iconsdir}/hicolor/*/*/*.png
-%{_desktopdir}/sim.desktop
 %{_desktopdir}/kde/sim.desktop
