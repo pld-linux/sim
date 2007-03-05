@@ -1,12 +1,12 @@
 Summary:	SIM - Simple Instant Messenger
 Summary(pl.UTF-8):	SIM - Simple Instant Messenger - prosty komunikator
 Name:		sim
-Version:	0.9.4.2
+Version:	0.9.4.3
 Release:	1
 License:	GPL
 Group:		Applications/Communications
 Source0:	http://download.berlios.de/sim-im/%{name}-%{version}.tar.bz2
-# Source0-md5:	80e56dbf394ee8fdcb9dae13647cd6ee
+# Source0-md5:	4bc30577e619e05252d394d51dc20747
 Source1:	%{name}.desktop
 Patch0:		kde-ac260-lt.patch
 Patch1:		%{name}-am110.patch
