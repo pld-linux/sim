@@ -22,6 +22,7 @@ BuildRequires:	libxslt-devel
 BuildRequires:	qt-devel
 BuildRequires:	openssl-devel >= 0.9.7d
 BuildRequires:	pkgconfig
+BuildRequires:	sed >= 4.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -50,7 +51,7 @@ inne.
 %patch0 -p1
 %patch1 -p0
 
-%{__perl} -pi -e 's@^sim_plugindir=.*@sim_plugindir="%{_libdir}/sim"@' configure.in.in
+%{__sed} -i -e 's@^sim_plugindir=.*@sim_plugindir="%{_libdir}/sim"@' configure.in.in
 
 %build
 %{__make} -f admin/Makefile.common cvs
