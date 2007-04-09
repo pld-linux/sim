@@ -16,15 +16,13 @@ BuildRequires:	automake
 BuildRequires:	arts-devel
 BuildRequires:	fam-devel
 BuildRequires:	flex
-BuildRequires:	gettext-devel
-BuildRequires:	kdelibs-devel
+BuildRequires:	kdelibs-devel >= 9:3.3.0
 BuildRequires:	libart_lgpl-devel
 BuildRequires:	libxslt-devel
 BuildRequires:	qt-devel
 BuildRequires:	openssl-devel >= 0.9.7d
 BuildRequires:	pkgconfig
 BuildRequires:	xorg-lib-libXScrnSaver-devel
-Requires:	kdelibs >= 9:3.3.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -56,7 +54,7 @@ inne.
 %{__perl} -pi -e 's@^sim_plugindir=.*@sim_plugindir="%{_libdir}/sim"@' configure.in.in
 
 %build
-%{__make} -f admin/Makefile.common
+%{__make} -f admin/Makefile.common cvs
 %configure \
 	KDEDIR=%{_libdir}
 
