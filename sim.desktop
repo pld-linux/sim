@@ -2,7 +2,6 @@
 Type=Application
 Exec=sim -caption "%c" %i %m
 Icon=sim
-MiniIcon=sim
 DocPath=sim/index.html
 Comment=ICQ-client
 Comment[de]=ICQ-Client
