@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
-Exec=sim -caption "%c" %i %m
+Exec=sim -caption "%c" %i
 Icon=sim
 DocPath=sim/index.html
 Comment=ICQ-client
