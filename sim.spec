@@ -73,8 +73,10 @@ rm -rf $RPM_BUILD_ROOT
 
 install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}/kde
 
-# it is _not_ in swahili
-rm -rf $RPM_BUILD_ROOT%{_datadir}/locale/sw
+# it is Swabian _not_ Swahili
+mv -f $RPM_BUILD_ROOT%{_datadir}/locale/sw{,g}
+# ... and unsupported
+rm -rf $RPM_BUILD_ROOT%{_datadir}/locale/swg
 
 #remove .la files
 rm $RPM_BUILD_ROOT%{_libdir}/libsim.la
