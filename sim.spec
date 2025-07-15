@@ -49,8 +49,8 @@ inne.
 
 %prep
 %setup -q
-%patch0 -p1
-%patch1 -p0
+%patch -P0 -p1
+%patch -P1 -p0
 
 %{__sed} -i -e 's@^sim_plugindir=.*@sim_plugindir="%{_libdir}/sim"@' configure.in.in
 
